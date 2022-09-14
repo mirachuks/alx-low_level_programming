@@ -1,92 +1,74 @@
-#include "main.h"
+#include <stdio.h>
 
-
+#include <stdlib.h>
 
 /**
  *
- *  * times_table - function that prints times table for 9
+ * *
  *
- *   *
+ * *
+ *
+ * * Description: print
+ *
+ * *
+ *
+ * *
+ *
+ * *
  *
  * */
 
-
-
-void times_table(void)
+int main()
 
 {
 
-		int x = 0; /* factor */
+	    int n1 = 0, n2;
 
-			int y; /* count  */
+	        while(n1 <= 9)
 
-				int z; /* computed value */
+			    {
 
+				            n2 = 0;
 
+					            while(n2 <= 9)
 
-					while (x < 10)
+							            {
 
-							{
+									                if(n1 != n2 && n1 < n2)
 
-										y = 0;
+												        {
 
-												while (y < 10)
+														            putchar(n1 + 48);
 
-															{
-
-																			z = x * y;
-
-
-
-																						if (z > 9)
-
-																										{
-
-																															_putchar(z / 10 + '0');
-
-																																			_putchar(z % 10 + '0');
-
-																																						}
-
-																									else if (y != 0)
-
-																													{
-
-																																		_putchar(' ');
-
-																																						_putchar(z + '0');
-
-																																									}
-
-																												else
-
-																																{
-
-																																					_putchar(z + '0');
-
-																																								}
+															                putchar(n2 + 48);
 
 
 
-																															if (y != 9)
+																	            if(n1 + n2 != 17)
 
-																																			{
+																			                {
 
-																																								_putchar(',');
+																						                putchar(',');
 
-																																												_putchar(' ');
+																								                putchar(' ');
 
-																																															}
+																										            }
 
-																																		y++;
+																		            }
 
-																																				}
+											        ++n2;
 
-														_putchar('\n');
+												        }
 
-																x++;
+						             ++n1;
 
-																	}
+							         }
+
+
+
+		    putchar('\n');
+
+		        return 0;
 
 }
 
