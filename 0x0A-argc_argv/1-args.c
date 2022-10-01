@@ -34,4 +34,3 @@ void print_number(int num)
 
 	_putchar(num % 10 + '0');
 }
-Footer
