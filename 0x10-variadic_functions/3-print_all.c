@@ -13,6 +13,8 @@ void print_all(const char * const format, ...);
  * @arg: A list of arguments pointing to
  *       the character to be printed.
  */
+
+
 void print_char(va_list arg)
 {
 	char letter;
@@ -26,6 +28,8 @@ void print_char(va_list arg)
  * @arg: A list of arguments pointing to
  *       the integer to be printed.
  */
+
+
 void print_int(va_list arg)
 {
 	int num;
@@ -39,6 +43,8 @@ void print_int(va_list arg)
  * @arg: A list of arguments pointing to
  *       the float to be printed.
  */
+
+
 void print_float(va_list arg)
 {
 	float num;
@@ -52,6 +58,8 @@ void print_float(va_list arg)
  * @arg: A list of arguments pointing to
  *       the string to be printed.
  */
+
+
 void print_string(va_list arg)
 {
 	char *str;
@@ -76,6 +84,8 @@ void print_string(va_list arg)
  *              or char * is ignored.
  *              If a string argument is NULL, (nil) is printed instead.
  */
+
+
 void print_all(const char * const format, ...)
 {
 	va_list args;
